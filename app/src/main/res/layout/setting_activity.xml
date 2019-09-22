@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Clear Data"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="CLEAR ALL SCHEDULE"
+        android:id="@+id/clrSchedule"
+        android:textSize="20dp"
+        android:backgroundTint="#ecf3fb"
+        android:layout_marginTop="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="CLEAR ALL Attendance"
+        android:id="@+id/clrAttendance"
+        android:textSize="20dp"
+        android:backgroundTint="#ecf3fb"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/clrSchedule"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

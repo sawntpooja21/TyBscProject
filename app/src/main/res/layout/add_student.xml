@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    tools:context=".AddStudent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="60px"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="ADD STUDENT" />
+
+        <Spinner
+            android:layout_marginTop="15dp"
+            android:id="@+id/addspinner"
+            android:layout_height="50dp"
+            android:layout_width="match_parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Student Name "
+            android:id="@+id/addName"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Roll_No "
+            android:id="@+id/addRoll"
+
+
+            />
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Contact_No"
+            android:id="@+id/addContact"
+            android:inputType="phone"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/addSave"
+            android:text="Save Record"
+
+            />
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/clrRecord"
+            android:text="Clear Record"/>
+    </LinearLayout>
+
+</RelativeLayout>

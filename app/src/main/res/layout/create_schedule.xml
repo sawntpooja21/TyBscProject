@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectday"
+                android:layout_gravity="center_horizontal">
+
+
+            </Spinner>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectday"
+                android:id="@+id/selectclass"
+                android:layout_gravity="center_horizontal">
+
+            </Spinner>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/selectclass"
+                android:hint="Subject Name"
+                android:id="@+id/subject"
+                />
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker"
+                android:layout_below="@+id/subject"
+                android:layout_alignLeft="@+id/subject"
+                android:layout_alignStart="@+id/subject"
+                android:layout_marginTop="59dp"
+                android:numbersSelectorColor="#000000"
+                android:amPmBackgroundColor="#000000"
+                android:numbersBackgroundColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:id="@+id/saveSCHEDULE"
+                android:layout_below="@+id/subject"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    xmlns:tools="http://schemas.android.com/tools"
+     >
+
+    <DatePicker
+        android:id="@+id/setdate"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="8.21"
+        >
+
+    </DatePicker>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/hour"
+
+        android:hint="Enter Hour"
+        android:layout_weight="0.52"/>
+
+    <Spinner
+        android:id="@+id/setSubject"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"></Spinner>
+
+</LinearLayout>

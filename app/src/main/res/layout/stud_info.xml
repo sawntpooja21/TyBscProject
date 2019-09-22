@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/etRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/fab"
+            android:layout_toStartOf="@+id/fab"
+            android:hint=" Enter Roll Number"
+            android:textColor="#000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/etRoll"
+            android:layout_alignStart="@+id/etRoll"
+            android:layout_below="@+id/etRoll"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+
+
+            <ListView
+                android:layout_marginTop="8dp"
+                android:id="@+id/attendProfileView_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:smoothScrollbar="false"
+                android:scrollingCache="false"
+                >
+            </ListView>
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:elevation="5dp"
+            app:borderWidth="0dp"
+            android:src="@drawable/add"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/showStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/etRoll"
+            android:layout_alignEnd="@+id/fab"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/fab"
+            android:text="Show"
+            android:textSize="15dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+    </RelativeLayout>
+</RelativeLayout>
